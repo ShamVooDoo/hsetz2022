@@ -1,0 +1,42 @@
+﻿<Window x:Class="HelperMovie.UserPageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:HelperMovie"
+        mc:Ignorable="d"
+        Title="UserPageWindow" Height="600" Width="1050">
+    <Grid Background="#696969">
+        <Border MinWidth="1000" Margin="5,7,0,0" Background="LightSteelBlue" VerticalAlignment="Top" Padding="20" MaxWidth="600" CornerRadius="23" Height="567">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="70" ShadowDepth="10" Color="#696969">
+
+                </DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <Border MinWidth="100" Margin="5,0,5,0" Background="White" Padding="20" MaxWidth="1000" Width="600" Height="68" CornerRadius="300">
+                    <TextBlock Text="Get ready to become the greatest in Hollywood!" FontSize="25" FontFamily="Times New Roman" FontWeight="Bold" Margin="0 0 0 0"/>
+                </Border>
+                <Grid Height="60" Width="250" RenderTransformOrigin="0.501,0.51" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Button x:Name="TechBase" Content="Tech Base" Click="TechBase_Click"/>
+                </Grid>
+                <Grid Height="60" Width="250" RenderTransformOrigin="0.501,0.51" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Button x:Name="Projects" Content="Projects" Click="Projects_Click"/>
+                </Grid>
+                <Grid Height="60" Width="250" RenderTransformOrigin="0.501,0.51" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Button x:Name="Team" Content="Team" Click="Team_Click"/>
+                </Grid>
+                <Grid Height="60" Width="250" RenderTransformOrigin="0.501,0.51" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Button x:Name="Tasks" Content="Tasks for today" Click="Tasks_Click"/>
+                </Grid>
+                <Image Source="images/yoda.jpg" Height="188" Width="510" HorizontalAlignment="Left"/>
+
+
+
+            </StackPanel>
+
+        </Border>
+
+    </Grid>
+</Window>
