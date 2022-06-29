@@ -51,7 +51,7 @@ namespace HelperMovie.Core
 
         public string Team { get { return team; } set { team = value; } }
 
-        public bool Admin { get; set; }
+        public int Admin { get; set; }
 
         // public string position { get; private set; }
 

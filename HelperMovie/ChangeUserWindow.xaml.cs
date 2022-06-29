@@ -25,7 +25,7 @@ namespace HelperMovie
         string UserAge { get; set; }
         string UserPosition { get; set; }
         string UserTeam { get; set; }
-        bool NowRule { get; set; }
+        int NowRule { get; set; }
 
         public ChangeUserWindow(User currentUser, User selectedUser)
         {
@@ -40,9 +40,9 @@ namespace HelperMovie
             CheckRule(NowRule);
         }
 
-        private void CheckRule(bool rule) // Устанавливает какие права у пользователя в данный момент
+        private void CheckRule(int rule) // Устанавливает какие права у пользователя в данный момент
         {
-            if (rule)
+            if (rule == 1)
             {
                 answerYes.IsChecked = true;
                 answerNo.IsChecked = false;
@@ -131,12 +131,12 @@ namespace HelperMovie
             if (answerYes.IsChecked == true)
             {
                 answerNo.IsChecked = false; ;
-                NowRule = true;
+                NowRule = 1;
             }
             if (answerNo.IsChecked == true)
             {
                 answerYes.IsChecked = false;
-                NowRule = false;
+                NowRule = 0;
             }
         }
 

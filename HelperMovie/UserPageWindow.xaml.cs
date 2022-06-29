@@ -27,14 +27,14 @@ namespace HelperMovie
         public UserPageWindow(User user)
         {
             CurrentUser = user;
+            InitializeComponent();
 
-            if (CurrentUser.Admin)
+            if (CurrentUser.Admin == 1)
             {
                 techBaseGrid.Visibility = Visibility.Visible;
                 projectsGrid.Visibility = Visibility.Visible;
                 usersGrid.Visibility = Visibility.Visible;
             }
-            InitializeComponent();
 
             ApplicationContext db = new ApplicationContext();
             Users = db.Users.ToList();
@@ -347,7 +347,7 @@ namespace HelperMovie
         {
             TextBlock userAdmin = sender as TextBlock;
             User user = userAdmin.DataContext as User;
-            if (user.Admin)
+            if (user.Admin == 1)
             {
                 userAdmin.Text = $"Admin: Yes";
             }
