@@ -15,7 +15,7 @@ namespace HelperMovie.Core
         int? age;
         string position;
         string team;
-        bool admin;
+        int admin;
 
         public int? id { get; set; }
 
@@ -66,10 +66,10 @@ namespace HelperMovie.Core
             this.name = name;
             this.age = age;
             this.position = position;
-            this.admin = false;
+            this.admin = 1;
         }
 
-        public User(string login, string password, string name, int age, string position, bool admin)
+        public User(string login, string password, string name, int age, string position, int admin)
         {
             this.login = login;
             this.pass = password;
