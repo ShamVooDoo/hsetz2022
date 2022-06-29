@@ -8,5 +8,11 @@ namespace HelperMovie.Core
 {
     public class Project
     {
+        public int projectID { get; set; }
+        public string projectName { get; set; }
+        public string projectDescp { get; set; }
+        public string projectStatus { get; set; }
+        public string projectLead { get; set; }
+        public string projectLeasedTech { get; set; }
     }
 }

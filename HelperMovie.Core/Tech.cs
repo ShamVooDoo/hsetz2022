@@ -8,5 +8,11 @@ namespace HelperMovie.Core
 {
     public class Tech
     {
+        public int techtId { get; set; }
+        public string techName { get; set; }
+        public string techDescp { get; set; }
+        public string techMaker { get; set; }
+        public string techImage { get; set; }
+        public string techType{ get; set; }
     }
 }
