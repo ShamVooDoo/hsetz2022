@@ -1,0 +1,31 @@
+﻿<Window x:Class="HelperMovie.ChangeUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelperMovie"
+        mc:Ignorable="d"
+        Title="ChangeUserWindow" Height="420" Width="600" ResizeMode="NoResize">
+    <Grid Background="LightSteelBlue">
+        <TextBlock Width="230" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 25, 0, 0" TextAlignment="Left" FontSize="20" Text="Name:"></TextBlock>
+        <TextBox x:Name="nameTextBox" Width="260" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75, 29, 0, 0" Foreground="DarkGray" TextAlignment="Left" FontSize="20" Background="Transparent" MouseEnter="nameTextBox_MouseEnter" MouseLeave="nameTextBox_MouseLeave"></TextBox>
+
+        <TextBlock Width="70" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 70, 0, 0" TextAlignment="Left" FontSize="20" Text="Age:"></TextBlock>
+        <TextBox x:Name="ageTextBox" Width="260" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="65, 74, 0, 0" Foreground="DarkGray" TextAlignment="Left" FontSize="20" Background="Transparent" MouseEnter="ageTextBox_MouseEnter" MouseLeave="ageTextBox_MouseLeave"></TextBox>
+
+        <TextBlock Width="80" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 115, 0, 0" TextAlignment="Left" FontSize="20" Text="Position:"></TextBlock>
+        <TextBox x:Name="positionTextBox" Width="260" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="95, 119, 0, 0" Foreground="DarkGray" TextAlignment="Left" FontSize="20" Background="Transparent" MouseEnter="positionTextBox_MouseEnter" MouseLeave="positionTextBox_MouseLeave"></TextBox>
+
+        <TextBlock Width="70" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10, 160, 0, 0" TextAlignment="Left" FontSize="20" Text="Team:"></TextBlock>
+        <TextBox x:Name="teamTextBox" Width="260" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="70, 164, 0, 0" Foreground="DarkGray" TextAlignment="Left" FontSize="20" Background="Transparent" MouseEnter="teamTextBox_MouseEnter"  MouseLeave="teamTextBox_MouseLeave"></TextBox>
+
+        <StackPanel Width="150" Height="90" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10, 0, 0, 105" Orientation="Vertical">
+            <TextBlock TextAlignment="Center" FontSize="20" Text="Admin"></TextBlock>
+            <CheckBox x:Name="answerYes" Width="150" Height="30" FontSize="20" Content="Yes" IsThreeState="False" Checked="answerYes_Checked"></CheckBox>
+            <CheckBox x:Name="answerNo" Width="150" Height="30" FontSize="20" Content="No" IsThreeState="False" Checked="answerYes_Checked"></CheckBox>
+        </StackPanel>
+
+        <Button x:Name="acceptButton" Width="250" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="300, 0, 0, 20" Background="SeaGreen" Foreground="White" FontSize="20" Content="Accept changes" Click="acceptButton_Click"></Button>
+        <Button x:Name="backButton" Width="250" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0, 0, 300, 20" Background="SeaGreen" FontSize="20" Content="Back without changes" Click="backButton_Click"></Button>
+    </Grid>
+</Window>
